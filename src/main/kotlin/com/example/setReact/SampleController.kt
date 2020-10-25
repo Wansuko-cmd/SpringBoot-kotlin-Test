@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping
 class SampleController {
     @RequestMapping("/")
     fun mainController(): String{
-        return "main"
+        return "index"
     }
 }
