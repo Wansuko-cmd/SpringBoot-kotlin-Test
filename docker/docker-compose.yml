@@ -5,7 +5,7 @@ services:
     build:
       context: ../
       dockerfile: docker/Dockerfile
-    volumes:
+    volumes: #ダウンロードしたファイルの直下にPathを変更
     - C:/Users/wansu/IdeaProjects/setReact:/app
     ports:
     - "8080:8080"
