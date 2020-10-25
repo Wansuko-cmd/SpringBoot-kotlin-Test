@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    volumes:
+    - C:/Users/wansu/IdeaProjects/setReact:/app
+    ports:
+    - "8080:8080"
