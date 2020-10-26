@@ -5,9 +5,6 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-#自身で追加
-docker/docker-compose.yml
-
 ### STS ###
 .apt_generated
 .classpath
