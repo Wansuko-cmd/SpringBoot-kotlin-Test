@@ -11,9 +11,12 @@ class SampleModel {
         this.name = name
     }
 
+    //複数のところで一つのModelのインスタンスを参照するためのやつ
     companion object{
+        //最新のものを確認
         @Volatile
         private var INSTANCE: SampleModel? = null
+
         fun getModel(): SampleModel{
             val tempInstance = INSTANCE
             if(tempInstance != null) return tempInstance
