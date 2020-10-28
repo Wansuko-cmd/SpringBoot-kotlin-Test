@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController
 class SampleRestController {
         @GetMapping("/hello")
         fun getName(@RequestParam(name = "name", required = false) name: String): String{
+            SampleModel.getModel().setName(name)
             return name
         }
     }
