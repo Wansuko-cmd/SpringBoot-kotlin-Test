@@ -14,8 +14,10 @@ services:
     image: postgres:latest
     container_name: sample_db_container
     restart: always
+    ports:
+      - 5432:5432
     environment:
       POSTGRES_USER: "dev"
       POSTGRES_PASSWORD: "pass"
     volumes:
-      - .\init_db:/docker-entrypoint-initdb.d
+      - ..\init_db:/docker-entrypoint-initdb.d
