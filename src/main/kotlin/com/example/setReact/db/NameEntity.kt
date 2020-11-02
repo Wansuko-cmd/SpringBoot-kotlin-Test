@@ -1,4 +1,4 @@
-package com.example.setReact
+package com.example.setReact.db
 
 import javax.persistence.*
 

@@ -1,4 +1,4 @@
-package com.example.setReact
+package com.example.setReact.db
 
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
@@ -13,4 +13,6 @@ class NameService {
     }
 
     fun save(S: NameEntity) = repo.save(S)
+
+    //fun getByName(name: String) = repo.findAll
 }
