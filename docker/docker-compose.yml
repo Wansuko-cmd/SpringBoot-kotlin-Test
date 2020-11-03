@@ -7,8 +7,11 @@ services:
       dockerfile: docker/Dockerfile
     volumes: #ダウンロードしたファイルの直下にPathを変更
       - ../:/app
-    ports: #本番用ポート番号
+    ports:
+      #本番用ポート番号
       - "8080:8080"
+      #リモートデバック用
+      - "5005:5005"
 
   db:
     image: postgres:latest
