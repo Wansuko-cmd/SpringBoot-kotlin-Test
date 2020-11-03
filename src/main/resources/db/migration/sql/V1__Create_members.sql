@@ -1,0 +1,4 @@
+CREATE TABLE Names (
+    Key SERIAL PRIMARY KEY,
+    Name VARCHAR(50)
+);

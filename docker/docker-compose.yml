@@ -1,5 +1,13 @@
 version: '3'
 
+x-template: &flyway-template
+  image: boxfuse/flyway:latest
+  volumes:
+    - ../src/main/resources/db/migration:/flyway/sql # マイグレーション用SQLファイルの格納先
+    - ../src/main/resources/db/migration/conf:/flyway/conf # 設定ファイルの格納先
+  depends_on:
+    - db
+
 services:
   web:
     build:
@@ -23,4 +31,20 @@ services:
       POSTGRES_USER: "dev"
       POSTGRES_PASSWORD: "pass"
     volumes:
-      - ..\init_db:/docker-entrypoint-initdb.d
+      - ../src/main/resources/db/init_db:/docker-entrypoint-initdb.d
+
+  flyway-clean:
+    <<: *flyway-template
+    command: clean
+
+  flyway-migrate:
+    <<: *flyway-template
+    command: migrate
+
+  flyway-info:
+    <<: *flyway-template
+    command: info
+
+
+
+

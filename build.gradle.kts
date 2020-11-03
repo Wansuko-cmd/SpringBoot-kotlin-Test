@@ -45,6 +45,7 @@ tasks.withType<KotlinCompile> {
 	}
 }
 
+//bootRun実行時にするやつ
 tasks.bootRun{
 	jvmArgs("-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005")
 }
