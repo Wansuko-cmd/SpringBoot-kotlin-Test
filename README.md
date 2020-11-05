@@ -2,6 +2,7 @@
 <h1>利用方法</h1>
 <h3>初回</h3>
 <ul>
+    <li>念のためgradlewファイルの改行コードがLFかどうかを確認する</li>
     <li>dockerフォルダに移動する</li>
     <li>docker-compose.ymlの中のvolumesの値を書く環境に合わせて変更</li>
     <li>コマンドで $docker-compose up を実行</li>
