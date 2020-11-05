@@ -1,4 +1,4 @@
-CREATE TABLE Demos (
-    Key SERIAL PRIMARY KEY,
-    Demo VARCHAR(50)
+CREATE TABLE members (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL
 );
