@@ -1,4 +1,4 @@
-# SpringBoot-kotlin-Test
+# Spring-Boot Template
 <h1>利用方法</h1>
 <h3>初回</h3>
 <ul>
@@ -18,6 +18,17 @@
 
 <h1>構造</h1>
 <p>Controller -> Service -> Mapper -> Domainsの構造をとる</p>
+
+<h1>導入しているもの</h1>
+<ul>
+    <li>Spring Boot DevTools</li>
+    <li>Spring Web</li>
+    <li>Thymeleaf</li>
+    <li>PostgreSQL Driver</li>
+    <li>Flyway</li>
+    <li>MyBatis</li>
+    <li>JDBC</li>
+</ul>
 以上
 
 
