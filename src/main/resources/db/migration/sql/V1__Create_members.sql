@@ -1,0 +1,4 @@
+CREATE TABLE Demos (
+    Key SERIAL PRIMARY KEY,
+    Demo VARCHAR(50)
+);
